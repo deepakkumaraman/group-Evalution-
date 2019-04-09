@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">group</string>
+    <string name="snamerr">Enter Name</string>
+    <string name="sroller">Enter RollNo</string>
+    <string name="sphoner">Enter Phone</string>
+    <string name="sbrancher">Enter Branch</string>
+    <string name="semailer">Enter Email</string>
+
+    <string name="spassword">Enter Password</string>
+</resources>
