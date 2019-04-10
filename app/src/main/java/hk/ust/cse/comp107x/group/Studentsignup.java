@@ -79,7 +79,7 @@ public class Studentsignup extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // checkedId is the RadioButton selected
-               // selectedId = group.getCheckedRadioButtonId();
+                // selectedId = group.getCheckedRadioButtonId();
                 gender = findViewById(checkedId);
                 genderString = (String) gender.getText();
                 Toast.makeText(getApplicationContext(), gender.getText(), Toast.LENGTH_SHORT).show();
@@ -91,7 +91,7 @@ public class Studentsignup extends AppCompatActivity {
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // selectedId = radioGroup.getCheckedRadioButtonId();
+                // selectedId = radioGroup.getCheckedRadioButtonId();
                 //gender = findViewById(selectedId);
 
 
@@ -170,7 +170,7 @@ public class Studentsignup extends AppCompatActivity {
 
     }
 
-        public void cancel(View view) {
+    public void cancel(View view) {
         finish();
     }
 }
