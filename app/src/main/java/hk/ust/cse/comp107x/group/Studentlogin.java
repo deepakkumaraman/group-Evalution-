@@ -69,7 +69,7 @@ public class Studentlogin extends AppCompatActivity implements View.OnClickListe
                                         .userLogin(
                                                 obj.getInt("id"),
                                                 obj.getString("name"),
-                                                obj.getString("roll"),
+                                                obj.getString("roll_no"),
                                                 obj.getString("branch"),
                                                 obj.getString("gender"),
                                                 obj.getString("phone"),

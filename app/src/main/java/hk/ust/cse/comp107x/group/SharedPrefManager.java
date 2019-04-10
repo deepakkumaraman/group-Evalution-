@@ -30,14 +30,14 @@ public class SharedPrefManager {
         return mInstance;
     }
 
-    public boolean userLogin(int id, String name, String roll, String branch, String gender, String phone, String email ){
+    public boolean userLogin(int id, String name, String roll_no, String branch, String gender, String phone, String email ){
 
         SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         editor.putInt(KEY_USER_ID, id);
         editor.putString(KEY_USER_NAME, name);
-        editor.putString(KEY_USER_ROLL_NO, roll);
+        editor.putString(KEY_USER_ROLL_NO, roll_no);
         editor.putString(KEY_USER_BRANCH, branch);
         editor.putString(KEY_USER_gender, gender);
         editor.putString(KEY_USER_PHONE, phone);

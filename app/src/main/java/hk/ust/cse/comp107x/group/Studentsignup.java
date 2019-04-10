@@ -29,7 +29,7 @@ public class Studentsignup extends AppCompatActivity {
 
     RadioGroup radioGroup ;
     RadioButton gender ;
-    String genderString;
+    String genderString = "Male";
     EditText studentName,studentRoll,studentPhone,studentEmail,studentPassword,studentBranch;
     Button buttonSubmit,buttonCancel;
     int selectedId ;
