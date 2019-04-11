@@ -1,6 +1,7 @@
 package hk.ust.cse.comp107x.group;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -42,7 +43,11 @@ public class Studentsignup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studentsignup);
 
-
+        if(SharedPrefManager.getInstance(this).isLoggedIn()){
+            finish();
+            startActivity(new Intent(this, Dashboard.class));
+            return;
+        }
 
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup1);
 
@@ -102,7 +107,6 @@ public class Studentsignup extends AppCompatActivity {
 
                     registerUser();
                     Toast.makeText(Studentsignup.this," Data Received Succesfully", Toast.LENGTH_SHORT).show();
-                    //Toast.makeText(Studentsignup.this, "Data Received Succesfully", Toast.LENGTH_SHORT).show();
                     finish();
                 }
 

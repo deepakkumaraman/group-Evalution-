@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/projectname"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="Project Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/student1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/projectname"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="174dp"
+        android:ems="10"
+        android:hint="Student1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/student2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/projectname"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="239dp"
+        android:ems="10"
+        android:hint="Student2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/student3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/projectname"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="308dp"
+        android:ems="10"
+        android:hint="Student3"
+        android:inputType="textPersonName" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/student4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/projectname"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="380dp"
+            android:ems="10"
+            android:hint="Student4"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/Groupid"
+            android:layout_width="355dp"
+            android:layout_height="49dp"
+            android:layout_alignStart="@+id/projectname"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="448dp"
+            android:ems="10"
+            android:hint="Group ID"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/Rollno1"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/student1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="273dp"
+        android:layout_marginLeft="273dp"
+        android:ems="10"
+        android:hint="Rollno1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Rollno2"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Rollno1"
+        android:layout_alignTop="@+id/student2"
+        android:ems="10"
+        android:hint="Rollno2"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Rollno3"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/projectname"
+        android:layout_marginTop="308dp"
+        android:ems="10"
+        android:hint="Rollno3"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Rollno4"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/projectname"
+        android:layout_marginTop="380dp"
+        android:ems="10"
+        android:hint="Rollno4"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/Supervisior"
+            android:layout_width="356dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="116dp"
+            android:ems="10"
+            android:hint="Supervisior"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/Submitproject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginBottom="60dp"
+        android:text="SUBMIT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>

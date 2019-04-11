@@ -75,12 +75,12 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/facphone"
+                android:id="@+id/facemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="PHONE"
-                android:inputType="phone" />
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress" />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -121,6 +121,7 @@
         android:layout_marginStart="29dp"
         android:layout_marginLeft="29dp"
         android:layout_marginBottom="198dp"
+        android:onClick="cancel"
         android:text="CANCEL"
         android:textColor="@android:color/holo_blue_bright"
         android:textSize="24sp"

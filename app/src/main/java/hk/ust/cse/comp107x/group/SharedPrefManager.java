@@ -16,6 +16,12 @@ public class SharedPrefManager {
     private static final String KEY_USER_PHONE = "userphone";
     private static final String KEY_USER_EMAIL = "useremail";
 
+    private static final String KEY_FACULTY_ID = "facultyid";
+    private static final String KEY_FACULTY_NAME = "facultyname";
+    private static final String KEY_FACULTY_DEPART = "facultydepart";
+    private static final String KEY_FACULTY_EMAIL = "facultyemail";
+
+
 
 
     private SharedPrefManager(Context context) {
@@ -69,5 +75,44 @@ public class SharedPrefManager {
     public String getUserEmail(){
         SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
         return sharedPreferences.getString(KEY_USER_EMAIL, null);
+    }
+
+
+
+    public boolean facultyLogin(int id, String name, String depart, String email ){
+
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putInt(KEY_FACULTY_ID, id);
+        editor.putString(KEY_FACULTY_NAME, name);
+        editor.putString(KEY_FACULTY_DEPART, depart);
+        editor.putString(KEY_FACULTY_EMAIL, email);
+
+
+        editor.apply();
+
+        return true;
+    }
+
+    public boolean isFacultyLoggedIn(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        if(sharedPreferences.getString(KEY_FACULTY_EMAIL, null) != null){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean logoutFaculty(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.apply();
+        return true;
+    }
+
+    public String getFacultyEmail(){
+        SharedPreferences sharedPreferences = mCtx.getSharedPreferences(SHARED_PREF_NAME, Context.MODE_PRIVATE);
+        return sharedPreferences.getString(KEY_FACULTY_EMAIL, null);
     }
 }
