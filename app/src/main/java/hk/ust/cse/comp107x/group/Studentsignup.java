@@ -45,7 +45,7 @@ public class Studentsignup extends AppCompatActivity {
 
         if(SharedPrefManager.getInstance(this).isLoggedIn()){
             finish();
-            startActivity(new Intent(this, Dashboard.class));
+            startActivity(new Intent(this, student_dashboard.class));
             return;
         }
 

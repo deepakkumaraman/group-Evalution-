@@ -1,5 +1,6 @@
 package hk.ust.cse.comp107x.group;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -61,6 +62,10 @@ public class student_dashboard extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        if(id == R.id.action_logout) {
+            startActivity(new Intent(this, Studentlogin.class));
+            finish();
         }
 
         return super.onOptionsItemSelected(item);

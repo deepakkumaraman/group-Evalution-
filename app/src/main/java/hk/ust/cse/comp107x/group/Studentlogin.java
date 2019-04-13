@@ -34,7 +34,7 @@ public class Studentlogin extends AppCompatActivity implements View.OnClickListe
 
         if(SharedPrefManager.getInstance(this).isLoggedIn()){
             finish();
-            startActivity(new Intent(this, Dashboard.class));
+            startActivity(new Intent(this, student_dashboard.class));
             return;
         }
 
@@ -80,7 +80,7 @@ public class Studentlogin extends AppCompatActivity implements View.OnClickListe
                                         "User Login successful",
                                         Toast.LENGTH_LONG
                                 ).show();
-                                startActivity(new Intent(getApplicationContext(), Dashboard.class));
+                                startActivity(new Intent(getApplicationContext(), student_dashboard.class));
                                 finish();
 
                             }else{
