@@ -3,6 +3,7 @@
     package="hk.ust.cse.comp107x.group">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -11,12 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FacultyDashboard"></activity>
-        <activity
-            android:name=".student_dashboard"
-            android:label="@string/title_activity_student_dashboard"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".CreateProject"></activity>
+        <activity android:name=".Student_profile" />
+        <activity android:name=".StudentDashboard" />
+        <activity android:name=".FacultyDashboard" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Studentsignup" />
         <activity android:name=".Facultysignup" />
         <activity android:name=".Facultylogin" />

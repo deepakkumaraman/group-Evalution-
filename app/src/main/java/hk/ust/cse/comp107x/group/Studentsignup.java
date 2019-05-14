@@ -45,7 +45,7 @@ public class Studentsignup extends AppCompatActivity {
 
         if(SharedPrefManager.getInstance(this).isLoggedIn()){
             finish();
-            startActivity(new Intent(this, student_dashboard.class));
+            startActivity(new Intent(this, StudentDashboard.class));
             return;
         }
 
@@ -137,7 +137,7 @@ public class Studentsignup extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
 
-                        try {
+                         try {
                             JSONObject jsonObject = new JSONObject(response);
 
                             Toast.makeText(getApplicationContext(), jsonObject.getString("message"), Toast.LENGTH_LONG).show();

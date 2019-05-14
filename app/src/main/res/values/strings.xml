@@ -16,4 +16,19 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="action_logout">Logout</string>
+
+
+    <string name="project_name">Enter Project Name</string>
+    <string name="student_1">Enter first student name</string>
+    <string name="student_2">Enter second student name</string>
+    <string name="student_3">Enter third student name</string>
+    <string name="student_4">Enter fourth student name</string>
+    <string name="rollno_1">Enter first student rollno</string>
+    <string name="rollno_2">Enter second student rollno</string>
+    <string name="rollno_3">Enter third student rollno</string>
+    <string name="rollno_4">Enter fourth student rollno</string>
+    <string name="group_id">Enter group id</string>
+    <string name="supervisior">Enter supervisior name</string>
+
+
 </resources>
